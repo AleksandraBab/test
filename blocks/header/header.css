@@ -1,0 +1,9 @@
+.header {
+  margin: auto;
+  width: 1440px;
+}
+
+.header__pic {
+  width: calc();
+}
+

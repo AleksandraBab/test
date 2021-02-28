@@ -1,0 +1,20 @@
+.page {
+  background: #FFF;
+}
+
+
+.page__section_size_s {
+  margin: 0 auto 137px;
+  width: calc(100% - 160px);
+  max-width: 1240px;
+}
+
+.page__section_size_m {
+  margin: 0 auto 150px;
+  width: calc(100% - 160px);
+  max-width: 1240px;
+}
+
+.content {
+  width: 1440px;
+}

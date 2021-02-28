@@ -1,0 +1,71 @@
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro__grid {
+  display: grid;
+  grid-template-areas:
+    "heading pass"
+    "btn pass"
+  ;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.intro__ticket {
+  width: 610px;
+  height: auto;
+  grid-area: pass;
+}
+
+.intro__btn-buy {
+  background-color: rgb(0, 0, 0);
+  width: 180px;
+  height: 40px;
+  border-radius: 24px;
+  padding: 12px 25px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  grid-area: btn;
+}
+
+.intro__table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: calc(100% - 176px);
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 60px;
+  margin: auto;
+}
+
+.intro__cell {
+  display: flex;
+  align-items: center;
+}
+
+.intro__digit {
+  margin: 0 16px 0 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: rgb(0, 0, 0);
+}
+
+.intro__text {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+

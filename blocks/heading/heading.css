@@ -1,0 +1,19 @@
+.heading {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  color: rgb(0, 0, 0);
+}
+
+.heading_place_intro {
+  max-width: 545px;
+  margin-right: 85px;
+  grid-area: heading;
+}
+
+.heading_place_speakers {
+  width: 234px;
+  margin: 0 auto 61px;
+}
