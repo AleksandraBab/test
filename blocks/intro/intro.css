@@ -1,6 +1,20 @@
 .intro {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto 137px;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    margin-bottom: 81px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-bottom: 45px;
+  }
 }
 
 .intro__grid {
@@ -13,16 +27,49 @@
   margin-bottom: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  .intro__grid {
+    grid-template-areas:
+    "heading"
+    "pass"
+    "btn"
+    ;
+    gap: 50px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__grid {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .intro__ticket {
   width: 610px;
   height: auto;
   grid-area: pass;
 }
 
+@media screen and (max-width: 1220px) {
+  .intro__ticket {
+    width: 466px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__ticket {
+    width: 100%;
+  }
+}
+
 .intro__btn-buy {
   background-color: rgb(0, 0, 0);
   width: 180px;
   height: 40px;
+  border: 0;
   border-radius: 24px;
   padding: 12px 25px;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -32,22 +79,53 @@
   text-align: center;
   color: rgb(255, 255, 255);
   grid-area: btn;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.intro__btn-buy:hover {
+  opacity: 0.8;
+}
+
+.intro__btn-buy:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .intro__btn-buy {
+    width: 160px;
+    padding: 12px 22px;
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .intro__table {
   list-style: none;
   padding: 0;
-  margin: 0;
-  width: calc(100% - 176px);
   display: grid;
   grid-template-columns: repeat(4, max-content);
   gap: 60px;
   margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .intro__table {
+    grid-template-columns: repeat(2, max-content);
+    gap: 31px 52px;
+    margin: auto;
+  }
+}
+
 .intro__cell {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1160px) {
+  .intro__cell {
+    flex-direction: column;
+  }
 }
 
 .intro__digit {
@@ -59,6 +137,27 @@
   color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 1160px) {
+  .intro__digit {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__digit {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__digit {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .intro__text {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -67,5 +166,22 @@
   line-height: 27px;
 }
 
+@media screen and (max-width: 1160px) {
+  .intro__text {
+    text-align: center;
+  }
+}
 
+@media screen and (max-width: 1024px) {
+  .intro__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .intro__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

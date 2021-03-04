@@ -1,4 +1,49 @@
-.logo__img {
-  width: 111px;
-  height: 33.77px;
+.logo_place_footer {
+  width: 138px;
+  height: 41px;
+  margin-right: 175px;
 }
+
+@media screen and (max-width: 1240px) {
+  .logo_place_footer {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .logo_place_footer {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo_place_footer {
+    margin-bottom: 51px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo_place_footer {
+    margin-bottom: 30px;
+  }
+}
+
+.logo_place_header {
+  width: 126px;
+  height: 41px;
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo_place_header {
+    margin-bottom: 51px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo_place_header {
+    margin-bottom: 30px;
+  }
+}
+

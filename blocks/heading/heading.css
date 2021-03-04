@@ -7,13 +7,40 @@
   color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 36px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading  {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+
 .heading_place_intro {
   max-width: 545px;
   margin-right: 85px;
   grid-area: heading;
 }
 
+@media screen and (max-width: 1024px) {
+  .heading_place_intro {
+    justify-self: start;
+  }
+}
+
+
 .heading_place_speakers {
-  width: 234px;
   margin: 0 auto 61px;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading_place_speakers {
+    margin-bottom: 35px;
+  }
 }

@@ -1,0 +1,125 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 126px;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.feedback__carousel {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .feedback__carousel {
+    width: 100%;
+  }
+}
+
+.feedback__btn {
+  background-position: 50%;
+  background-size: 18.33px 35px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 0;
+  min-width: 14%;
+  max-width: calc(100% - 690px);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .feedback__btn {
+    background-size: 13.1px 25px;
+  }
+}
+
+.feedback__btn_back {
+  background-image: url(../../images/back.svg);
+}
+
+.feedback__btn_back:focus {
+  outline: none;
+}
+
+.feedback__review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 610px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 40px 45px 22px;
+  background-color: rgb(248, 248, 248);
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__review {
+    padding: 25px 35px 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback__review {
+    padding: 20px 17px 9px;
+  }
+}
+
+.feedback__text {
+  margin: 0 0 40px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__text {
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.feedback__name {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: end;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__name {
+    font-weight: 300;
+  }
+}
+
+.feedback__btn_forward {
+  background-image: url(../../images/forward.svg);
+}
+
+.feedback__btn_forward:focus {
+  outline: none;
+}

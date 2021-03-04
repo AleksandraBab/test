@@ -1,20 +1,37 @@
 .page {
-  background: #FFF;
+  background-color: rgb(255, 255, 255);
+  position: relative;
 }
 
-
-.page__section_size_s {
-  margin: 0 auto 137px;
+.page__section {
   width: calc(100% - 160px);
   max-width: 1240px;
 }
 
-.page__section_size_m {
-  margin: 0 auto 150px;
-  width: calc(100% - 160px);
-  max-width: 1240px;
+@media screen and (max-width: 1024px) {
+  .page__section {
+    width: calc(100% - 120px);
+  }
 }
 
-.content {
-  width: 1440px;
+@media screen and (max-width: 600px) {
+  .page__section {
+    width: calc(100% - 40px);
+  }
+}
+
+.page__footer {
+  margin-top: -150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page__footer {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page__footer {
+    margin-top: -40px;
+  }
 }

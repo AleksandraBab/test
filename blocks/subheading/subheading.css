@@ -1,0 +1,40 @@
+.subheading {
+  margin: 0 auto 67px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .subheading {
+    margin-bottom: 48px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subheading {
+    margin-bottom: 31px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.subheading_place_info {
+  margin-bottom: 81px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subheading_place_info {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subheading_place_info {
+    margin-bottom: 52px;
+  }
+}

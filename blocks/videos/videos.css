@@ -1,0 +1,117 @@
+.videos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .videos {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .videos {
+    margin-bottom: 50px;
+  }
+}
+
+.videos__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .videos__list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .videos__list {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+}
+
+.videos__item {
+  background-color: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.videos__preview {
+  width: 100%;
+  height: auto;
+}
+
+.videos__name {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 14px 23px 40px 26px;
+}
+
+.videos__author {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+  margin: 0 23px 20px 26px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .videos__author {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.videos__btn-showmore {
+  display: none;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 172px;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  box-sizing: border-box;
+  padding: 10px 23px;
+  border-radius: 24px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.videos__btn-showmore:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.videos__btn-showmore:focus {
+  outline: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .videos__btn-showmore {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .videos__btn-showmore {
+    width: 160px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+

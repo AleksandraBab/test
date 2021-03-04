@@ -1,0 +1,242 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 137px;
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    margin-bottom: 121px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    margin-bottom: 45px;
+    width: 100%;
+  }
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 130px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__list {
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__list {
+    margin-bottom: 69px;
+    width: calc(100% - 40px);
+  }
+}
+
+.info__item {
+  display: flex;
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__item {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__item {
+    margin-bottom: 38px;
+    flex-direction: column;
+  }
+}
+
+.info__item:last-child {
+  margin-bottom: 0;
+}
+
+.info__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__pic {
+  width: 257px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__pic {
+    width: 200px;
+    margin-right: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__pic {
+    margin: 0 auto 20.8px;
+  }
+}
+
+.info__subheading {
+  margin: 0 0 13px 0;
+  max-width: 340px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .info__subheading {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__subheading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.info__text {
+  margin: 0;
+  max-width: 340px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+  .info__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.info__card {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__card {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+  }
+}
+
+.info__icon {
+  width: 609px;
+  height: 404px;
+  background-image: url(../../images/lev.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__icon {
+    width: 334px;
+    height: 220px;
+    flex-shrink: 0;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__icon {
+    width: 280px;
+    margin-bottom: 5px;
+    margin: auto;
+    order: 1;
+    align-self: center;
+  }
+}
+
+.info__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .info__caption {
+    width: calc(100% - 40px);
+    margin: auto;
+    order: 2;
+    margin-bottom: 36px;
+  }
+}
+
+.info__leo {
+  margin: 0 0 10px;
+  max-width: 297px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .info__leo {
+    max-width: 268px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__leo {
+    max-width: 238px;
+    font-size: 16px;
+  }
+}
+
+.info__about {
+  margin: 0 78px 0 0;
+  max-width: 340px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .info__about {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info__about {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
